@@ -10,9 +10,8 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/**
- * Created by IgorPc on 11/11/2018.
- */
+//C:\Users\Admin\Desktop\lab6.txt
+
 public class Console2 {
     private static List<String> strings=new ArrayList<>();
     private static List<Double> doubleDigits=new ArrayList<>();

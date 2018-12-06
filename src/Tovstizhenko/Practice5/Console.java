@@ -14,12 +14,12 @@ public class Console {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("Please quantity of movies");
-        String temp=sc.nextLine();
-        temp=checkInput(temp,sc);
+        String temp=null;
         int q =0;
         while (true) {
             try {
-
+                temp=sc.nextLine();
+                temp=checkInput(temp,sc);
 
                 q = Integer.valueOf(temp);
                 break;
@@ -86,9 +86,11 @@ public class Console {
                     System.out.println("Please quantity of actors");
                     movie.setQuantity(sc.nextInt());
                     movies[i] = movie;
+                    break;
                 }catch (InputMismatchException in)
                 {
                     System.out.println("Please numbers. Try again");
+                    sc.nextLine();
                 } catch (MyPriceException e) {
                     System.out.println("Please input positive number");
                 }

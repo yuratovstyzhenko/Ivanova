@@ -31,12 +31,4 @@ public class Console {
             list2.add(random.nextInt(20));
         }
     }
-    private static String checkInput(String text, Scanner sc){
-        if(text.equalsIgnoreCase("")){
-            text=sc.nextLine();
-            return checkInput(text,sc);
-
-        }
-        return text;
-    }
 }
